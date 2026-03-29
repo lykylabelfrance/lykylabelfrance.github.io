@@ -1,0 +1,39 @@
+# Lyky Label France — robots.txt
+# Site officiel : https://lykylabelfrance.github.io/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lykylabelfrance.github.io/sitemap.xml
+
+# Autoriser tous les crawlers IA (GEO / AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
