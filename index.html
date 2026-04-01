@@ -1467,6 +1467,67 @@
                 grid-template-columns: 1fr;
             }
 
+            .roster-card {
+                background: rgba(255,255,255,0.05);
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 15px;
+                padding: 25px 15px;
+                text-align: center;
+                transition: all 0.3s ease;
+            }
+            .roster-card:hover {
+                transform: translateY(-5px);
+                border-color: var(--gold);
+                background: rgba(255,255,255,0.08);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            }
+            .roster-avatar {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, var(--primary-red), var(--gold));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 15px;
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #fff;
+            }
+            .roster-card h4 {
+                margin: 0 0 5px;
+                font-size: 1rem;
+                color: #fff;
+            }
+            .partner-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 20px;
+                margin-top: 25px;
+            }
+            .partner-card {
+                background: rgba(255,255,255,0.05);
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                transition: all 0.3s ease;
+            }
+            .partner-card:hover {
+                border-color: var(--gold);
+                transform: translateY(-3px);
+                background: rgba(255,255,255,0.08);
+            }
+            .partner-card h4 {
+                margin: 0 0 5px;
+                font-size: 0.95rem;
+                color: var(--gold);
+            }
+            .partner-card p {
+                margin: 0;
+            }
+
+
             .catalogue-filters {
                 justify-content: flex-start;
                 overflow-x: auto;
@@ -2345,55 +2406,19 @@
             <button class="pro-tab" data-tab="press">Presse</button>
         </div>
 
-        <div id="partenaires" style="margin-bottom:60px;">
-                    <h3 style="font-size:1.5rem;margin-bottom:15px;">Nos Partenaires</h3>
-                    <p style="color:var(--text-secondary);margin-bottom:30px;">LYKY LABEL FRANCE collabore avec un réseau de labels, éditeurs et producteurs pour développer la visibilité et gérer les droits de nos artistes sur tous les marchés.</p>
-                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;">
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">9M</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">976 MUSIC PUBLISHING</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Édition musicale · Mayotte & Océan Indien</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">AM</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">AALIYAH MUSIC RECORDS</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Label · Production phonographique</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">EM</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">ELVTN MUSIC</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Label · Production & Management</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">KR</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">K2 RECORDS</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Label · Production musicale</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">LP</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">LABUSE PRODUCTION</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Production · Événementiel</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">MP</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">MKL PUBLISHING</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Édition musicale · Droits d'auteur</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">SP</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">SPIKA PRODUCTION MUSIQUE</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Production · Composition</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">TP</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">TWENTYTWO PM</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Production · Management</p>
-                    </div>
-                    <div style="background:rgba(232,0,29,0.05);border:1px solid rgba(232,0,29,0.15);border-radius:8px;padding:20px;text-align:center;">
-                        <div style="width:50px;height:50px;background:var(--primary-red);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:700;font-size:0.9rem;color:#fff;">DJ</div>
-                        <h4 style="font-size:0.95rem;margin-bottom:4px;">DJ KALISBOY</h4>
-                        <p style="font-size:0.75rem;color:var(--text-secondary);">Production · Artiste partenaire</p>
-                    </div>
+        <div class="pro-content active" id="partners">
+                    <h3>Nos Partenaires</h3>
+                    <p style="color:var(--text-secondary);margin-bottom:20px;">LYKY LABEL FRANCE collabore avec un réseau de labels, éditeurs et producteurs pour développer ses artistes.</p>
+                    <div class="partner-grid">
+                        <div class="partner-card"><h4>976 MUSIC PUBLISHING</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Éditeur</p></div>
+                        <div class="partner-card"><h4>AALIYAH MUSIC RECORDS</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Label</p></div>
+                        <div class="partner-card"><h4>ELVTN MUSIC</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Label</p></div>
+                        <div class="partner-card"><h4>K2 RECORDS</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Label</p></div>
+                        <div class="partner-card"><h4>LABUSE PRODUCTION</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Producteur</p></div>
+                        <div class="partner-card"><h4>MKL PUBLISHING</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Éditeur</p></div>
+                        <div class="partner-card"><h4>SPIKA PRODUCTION MUSIQUE</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Producteur</p></div>
+                        <div class="partner-card"><h4>TWENTYTWO PM</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Label</p></div>
+                        <div class="partner-card"><h4>DJ KALISBOY</h4><p style="color:var(--text-secondary);font-size:0.85rem;">Artiste / Partenaire</p></div>
                     </div>
                 </div><div id="press" class="pro-content">
             <h3>Espace Presse</h3>
