@@ -4,442 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combien rapporte vraiment un stream Spotify ? | LYKY LABEL FRANCE</title>
-    <meta name="description" content="Les vrais chiffres d'un label indÃ©pendant : taux par stream en France, Top 10 des pays les plus et moins rentables, Premium vs Gratuit. DonnÃ©es rÃ©elles analysÃ©es.">
-    <meta name="keywords" content="stream spotify combien rapporte, revenus spotify, taux stream spotify france, spotify paiement par stream, rÃ©munÃ©ration spotify artiste">
-    <meta property="og:title" content="Combien rapporte vraiment un stream Spotify ?">
-    <meta property="og:description" content="Les vrais chiffres d'un label indÃ©pendant franÃ§ais. 2,1 millions de streams analysÃ©s sur 181 pays.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html">
+    <meta name="description" content="Les vrais chiffres d&#39;un label ind&#233;pendant fran&#231;ais : 2,1 millions de streams analys&#233;s sur 181 pays.">
+    <meta name="keywords" content="stream spotify combien rapporte, r&#233;mun&#233;ration spotify france, taux par stream spotify">
+    <meta name="author" content="LYKY LABEL FRANCE">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-            line-height: 1.8;
-            font-size: 17px;
-        }
-        /* NAV */
-        nav {
-            position: fixed; top: 0; width: 100%; z-index: 1000;
-            background: rgba(10,10,10,0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            padding: 1rem 2rem;
-            display: flex; align-items: center; justify-content: space-between;
-        }
-        nav .logo { font-weight: 800; font-size: 1.1rem; letter-spacing: 2px; text-decoration: none; color: #fff; }
-        nav .back-link { color: #ccc; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
-        nav .back-link:hover { color: #e8001d; }
-
-        /* HERO */
-        .hero {
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-        .hero .tag {
-            display: inline-block;
-            background: #e8001d;
-            color: #fff;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-        }
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.2rem);
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            max-width: 800px;
-            margin-left: auto; margin-right: auto;
-        }
-        .hero .subtitle {
-            color: #ccc;
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .hero .meta {
-            margin-top: 2rem;
-            color: #888;
-            font-size: 0.85rem;
-        }
-
-        /* ARTICLE */
-        article {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 3rem 2rem 5rem;
-        }
-        article h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 3rem 0 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #e8001d;
-        }
-        article h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 2rem 0 1rem;
-            color: #e8001d;
-        }
-        article p {
-            margin-bottom: 1.5rem;
-            color: #ddd;
-        }
-        article strong { color: #fff; }
-        article img {
-            width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        article ul, article ol {
-            margin: 1rem 0 1.5rem 1.5rem;
-            color: #ddd;
-        }
-        article li { margin-bottom: 0.5rem; }
-
-        /* STAT CARDS */
-        .stat-highlight {
-            background: #1a1a1a;
-            border: 1px solid rgba(255,255,255,0.1);
-            border-left: 4px solid #e8001d;
-            border-radius: 8px;
-            padding: 1.5rem 2rem;
-            margin: 2rem 0;
-            text-align: center;
-        }
-        .stat-highlight .big-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #e8001d;
-            display: block;
-        }
-        .stat-highlight .label {
-            color: #ccc;
-            font-size: 0.95rem;
-            margin-top: 0.3rem;
-        }
-
-        /* TABLE */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0 2rem;
-            font-size: 0.95rem;
-        }
-        thead th {
-            background: #1a1a1a;
-            color: #e8001d;
-            padding: 0.8rem 1rem;
-            text-align: left;
-            font-weight: 600;
-            border-bottom: 2px solid #e8001d;
-        }
-        tbody td {
-            padding: 0.7rem 1rem;
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-            color: #ddd;
-        }
-        tbody tr:hover { background: rgba(232,0,29,0.05); }
-        tbody td:first-child { font-weight: 600; color: #fff; }
-
-        /* TAKEAWAYS */
-        .takeaway {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 1.5rem 2rem;
-            margin: 1rem 0;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-        .takeaway-number {
-            display: inline-block;
-            background: #e8001d;
-            color: #fff;
-            width: 30px; height: 30px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            margin-right: 0.5rem;
-        }
-        .takeaway strong { color: #fff; }
-        .takeaway p { color: #ccc; margin-top: 0.5rem; margin-bottom: 0; }
-
-        /* CTA */
-        .cta-share {
-            background: linear-gradient(135deg, #1a1a1a, #2a1a1a);
-            border: 1px solid #e8001d;
-            border-radius: 12px;
-            padding: 2.5rem;
-            text-align: center;
-            margin: 3rem 0;
-        }
-        .cta-share h3 { color: #fff; font-size: 1.4rem; margin-bottom: 1rem; }
-        .cta-share p { color: #ccc; margin-bottom: 1.5rem; }
-        .share-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-        .share-btn {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.7rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: transform 0.2s, opacity 0.2s;
-        }
-        .share-btn:hover { transform: translateY(-2px); opacity: 0.9; }
-        .share-btn.twitter { background: #1da1f2; color: #fff; }
-        .share-btn.facebook { background: #1877f2; color: #fff; }
-        .share-btn.linkedin { background: #0a66c2; color: #fff; }
-        .share-btn.whatsapp { background: #25d366; color: #fff; }
-        .share-btn.copy { background: #333; color: #fff; border: 1px solid #555; cursor: pointer; }
-
-        /* METHODOLOGY */
-        .methodology {
-            background: #111;
-            border-radius: 8px;
-            padding: 1.5rem 2rem;
-            margin: 2rem 0;
-            font-size: 0.85rem;
-            color: #999;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-        .methodology strong { color: #ccc; }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            color: #666;
-            font-size: 0.85rem;
-        }
-        footer a { color: #e8001d; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            nav { padding: 0.8rem 1rem; }
-            .hero { padding: 6rem 1.5rem 3rem; }
-            article { padding: 2rem 1.5rem 4rem; }
-            article h2 { font-size: 1.5rem; }
-            .stat-highlight .big-number { font-size: 2rem; }
-            table { font-size: 0.85rem; }
-            thead th, tbody td { padding: 0.5rem 0.6rem; }
-            .share-buttons { flex-direction: column; align-items: center; }
-        }
-    </style>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Combien rapporte vraiment un stream Spotify ? Les vrais chiffres">
+    <meta property="og:description" content="2,1M de streams analys&#233;s sur 181 pays. Taux France, Top 10, Premium vs Gratuit.">
+    <meta property="og:url" content="https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html">
+    <meta property="og:site_name" content="LYKY LABEL FRANCE">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Combien rapporte vraiment un stream Spotify ?">
+    <meta name="twitter:description" content="Les vrais chiffres d&#39;un label ind&#233;pendant : taux par stream France, Top 10 pays, Premium vs Gratuit.">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Combien rapporte vraiment un stream Spotify ?",
-        "description": "Analyse dÃ©taillÃ©e des revenus Spotify par stream basÃ©e sur les donnÃ©es rÃ©elles d'un label indÃ©pendant franÃ§ais. Top 10 des pays, taux France, Premium vs Gratuit.",
-        "author": { "@type": "Organization", "name": "LYKY LABEL FRANCE" },
-        "publisher": { "@type": "Organization", "name": "LYKY LABEL FRANCE", "url": "https://lykylabelfrance.github.io" },
+        "headline": "Combien rapporte vraiment un stream sur Spotify ?",
+        "description": "Analyse des revenus Spotify : 2,1 millions de streams sur 181 pays",
+        "author": {"@type": "Organization", "name": "LYKY LABEL FRANCE", "url": "https://lykylabelfrance.github.io"},
+        "publisher": {"@type": "Organization", "name": "LYKY LABEL FRANCE"},
         "datePublished": "2026-04-01",
-        "mainEntityOfPage": "https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html"
+        "dateModified": "2026-04-01",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html"}
     }
     </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.8}
+        nav{background:rgba(10,10,10,.95);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;border-bottom:1px solid #222}
+        nav a{color:#fff;text-decoration:none;font-weight:600}
+        nav .back{color:#aaa;font-size:.9rem}
+        nav .back:hover{color:#e8001d}
+        .hero{background:linear-gradient(135deg,#1a1a1a 0%,#0a0a0a 50%,#1a0a0a 100%);padding:4rem 2rem;text-align:center;border-bottom:2px solid #e8001d}
+        .hero .tag{display:inline-block;background:#e8001d;color:#fff;padding:.3rem 1rem;border-radius:20px;font-size:.85rem;font-weight:600;margin-bottom:1.5rem}
+        .hero h1{font-size:2.5rem;font-weight:800;color:#fff;max-width:800px;margin:0 auto 1rem}
+        .hero .subtitle{font-size:1.15rem;color:#aaa;max-width:600px;margin:0 auto .5rem}
+        .hero .meta{font-size:.85rem;color:#666;margin-top:1rem}
+        article{max-width:800px;margin:0 auto;padding:3rem 2rem}
+        h2{font-size:1.7rem;font-weight:700;color:#fff;margin:3rem 0 1.5rem;padding-bottom:.5rem;border-bottom:2px solid #e8001d}
+        p{margin-bottom:1.2rem;color:#ccc}
+        strong{color:#fff}
+        .stat-card{background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:2rem;text-align:center;margin:2rem 0}
+        .stat-card .number{font-size:3rem;font-weight:800;color:#e8001d}
+        .stat-card .label{color:#999;font-size:.95rem;margin-top:.5rem}
+        .chart{background:#1a1a1a;border-radius:12px;padding:1.5rem;margin:2rem 0;border:1px solid #333}
+        .chart-title{color:#fff;font-weight:600;margin-bottom:1rem;font-size:1rem}
+        .bar-row{display:flex;align-items:center;margin:.4rem 0;gap:.5rem}
+        .bar-label{min-width:140px;font-size:.85rem;color:#ccc;text-align:right}
+        .bar-container{flex:1;height:28px;background:#222;border-radius:4px;overflow:hidden;position:relative}
+        .bar{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:.75rem;font-weight:600;color:#fff;min-width:fit-content;transition:width .5s}
+        .bar-gold{background:linear-gradient(90deg,#c9a227,#f0d060)}
+        .bar-red{background:linear-gradient(90deg,#c0392b,#e74c3c)}
+        .bar-green{background:linear-gradient(90deg,#1db954,#1ed760)}
+        .bar-blue{background:linear-gradient(90deg,#2563eb,#3b82f6)}
+        .bar-purple{background:linear-gradient(90deg,#7c3aed,#8b5cf6)}
+        .vs-container{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin:1.5rem 0}
+        .vs-card{background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:1.5rem 2rem;text-align:center;flex:1;min-width:200px}
+        .vs-card .num{font-size:2rem;font-weight:800}
+        .vs-card .lab{font-size:.85rem;color:#999;margin-top:.3rem}
+        .vs-premium .num{color:#1db954}
+        .vs-free .num{color:#e74c3c}
+        table{width:100%;border-collapse:collapse;margin:1.5rem 0;background:#1a1a1a;border-radius:8px;overflow:hidden}
+        th{background:#e8001d;color:#fff;padding:.8rem 1rem;text-align:left;font-weight:600}
+        td{padding:.7rem 1rem;border-bottom:1px solid #222}
+        tr:hover{background:#222}
+        .highlight{color:#e8001d;font-weight:600}
+        ul{margin:1rem 0 1.5rem 1.5rem}
+        li{margin-bottom:.5rem;color:#ccc}
+        .takeaway{background:#1a1a1a;border-left:4px solid #e8001d;padding:1.2rem 1.5rem;margin:1.5rem 0;border-radius:0 8px 8px 0}
+        .takeaway .title{font-weight:700;color:#e8001d;margin-bottom:.3rem}
+        .share-section{text-align:center;margin:3rem 0;padding:2rem;background:#1a1a1a;border-radius:12px}
+        .share-section h2{border:none;margin-top:0}
+        .share-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+        .share-buttons a,.share-buttons button{padding:.6rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;font-size:.9rem;cursor:pointer;border:none;font-family:inherit}
+        .btn-x{background:#000;color:#fff;border:1px solid #333 !important}
+        .btn-fb{background:#1877F2;color:#fff}
+        .btn-li{background:#0A66C2;color:#fff}
+        .btn-wa{background:#25D366;color:#fff}
+        .btn-copy{background:#333;color:#fff}
+        .methodology{font-size:.85rem;color:#666;margin-top:3rem;padding-top:1.5rem;border-top:1px solid #222;text-align:center}
+        .methodology strong{color:#999}
+        footer{text-align:center;padding:2rem;border-top:1px solid #222;color:#555;font-size:.85rem}
+        footer a{color:#e8001d;text-decoration:none}
+        @media(max-width:600px){.hero h1{font-size:1.6rem}.stat-card .number{font-size:2.2rem}article{padding:2rem 1rem}.bar-label{min-width:100px;font-size:.75rem}}
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="https://lykylabelfrance.github.io/">LYKY LABEL</a>
+        <a href="https://lykylabelfrance.github.io/#blog" class="back">&#8592; Retour au site</a>
+    </nav>
+    <header class="hero">
+        <div class="tag">Analyse Streaming</div>
+        <h1>Combien rapporte vraiment un stream sur Spotify ?</h1>
+        <p class="subtitle">Les vrais chiffres d&#8217;un label ind&#233;pendant fran&#231;ais. 2,1 millions de streams analys&#233;s sur 181 pays</p>
+        <p class="meta">Par LYKY LABEL FRANCE &#183; Mis &#224; jour avec les derni&#232;res donn&#233;es de distribution</p>
+    </header>
+    <article>
+        <p>Tu te demandes combien rapporte un stream Spotify ? Oublie les articles qui te balancent &#171; entre 0,003 et 0,005 &#8364; &#187; sans contexte. Ici, on te donne <strong>les vrais chiffres</strong>, extraits de notre rapport de distribution r&#233;el couvrant <strong>2,1 millions de streams</strong> sur <strong>181 pays</strong>.</p>
 
-<nav>
-    <a href="https://lykylabelfrance.github.io/" class="logo">LYKY LABEL</a>
-    <a href="https://lykylabelfrance.github.io/#blog" class="back-link">&larr; Retour au site</a>
-</nav>
-
-<header class="hero">
-    <span class="tag">Analyse Streaming</span>
-    <h1>Combien rapporte vraiment un stream sur Spotify ?</h1>
-    <p class="subtitle">Les vrais chiffres d'un label indÃ©pendant franÃ§ais. 2,1 millions de streams analysÃ©s sur 181 pays. Pas de thÃ©orie. Du concret.</p>
-    <p class="meta">Par LYKY LABEL FRANCE &middot; Mis Ã  jour avec les derniÃ¨res donnÃ©es de distribution</p>
-</header>
-
-<article>
-
-    <p>Tu te demandes combien rapporte un stream Spotify ? Oublie les articles qui te balancent "entre 0,003 et 0,005 &euro;" sans aucune source. Ici, on va dÃ©cortiquer <strong>les vrais chiffres</strong>, tirÃ©s directement des relevÃ©s de distribution d'un label indÃ©pendant franÃ§ais. Plus de 2,1 millions de streams analysÃ©s, 181 pays, trois mois de donnÃ©es brutes.</p>
-
-    <!-- ===================== FRANCE ===================== -->
-    <h2>Ce que rapporte rÃ©ellement 1 stream Spotify en France</h2>
-
-    <p>CommenÃ§ons par ce qui t'intÃ©resse probablement le plus si tu es artiste, producteur ou manager basÃ© en France.</p>
-
-    <div class="stat-highlight">
-        <span class="big-number">0,0035 &euro;</span>
-        <span class="label">Taux moyen d'un stream Spotify en France (soit 0,00378 $)</span>
-    </div>
-
-    <p>Mais ce chiffre ne veut rien dire tout seul. Parce que derriÃ¨re cette "moyenne", se cachent deux rÃ©alitÃ©s radicalement diffÃ©rentes.</p>
-
-    <h3>L'Ã©coute Premium vs l'Ã©coute gratuite : le gouffre</h3>
-
-    <img src="images/spotify-premium-vs-gratuit-france.png" alt="Graphique comparant le taux par stream Spotify Premium (0,0044â¬) vs Gratuit (0,00085â¬) en France" loading="lazy">
-
-    <p>Quand un abonnÃ© Spotify Premium Ã©coute ton morceau en France, tu touches <strong>0,0044 &euro;</strong> par stream. Quand c'est un utilisateur du tier gratuit (avec publicitÃ©s), tu touches <strong>0,00085 &euro;</strong>. Autrement dit, un stream Premium rapporte <strong>5 fois plus</strong> qu'un stream gratuit.</p>
-
-    <p>Et la rÃ©partition n'est pas anodine : en France, <strong>75 % des Ã©coutes proviennent d'abonnÃ©s Premium</strong> et 25 % du tier gratuit. C'est une bonne nouvelle relative &mdash; dans certains pays, la proportion s'inverse, et le taux moyen s'effondre.</p>
-
-    <h3>Combien de streams pour gagner de l'argent ?</h3>
-
-    <img src="images/streams-pour-gagner-spotify.png" alt="Graphique montrant le nombre de streams nÃ©cessaires pour gagner 1â¬, 10â¬, 100â¬, 1000â¬ et un SMIC en France sur Spotify" loading="lazy">
-
-    <ul>
-        <li><strong>1 &euro; = 287 streams</strong></li>
-        <li><strong>10 &euro; = 2 874 streams</strong></li>
-        <li><strong>100 &euro; = 28 740 streams</strong></li>
-        <li><strong>1 000 &euro; = 287 397 streams</strong></li>
-        <li><strong>Un SMIC net (1 426 &euro;) = environ 410 000 streams par mois</strong>, soit plus de 13 600 streams par jour, 7 jours sur 7</li>
-    </ul>
-
-    <p>Et attention : ces montants sont <em>bruts</em>, avant la rÃ©partition entre le label, le distributeur, l'artiste, les auteurs-compositeurs et l'Ã©diteur. Selon ton contrat, tu ne touches qu'une fraction de ces revenus.</p>
-
-    <!-- ===================== TOP 10 BEST ===================== -->
-    <h2>Le Top 10 des pays qui rapportent le plus par stream</h2>
-
-    <p>Tous les streams ne se valent pas. Loin de lÃ .</p>
-
-    <img src="images/top10-pays-rentables-spotify.png" alt="Top 10 des pays qui rapportent le plus par stream Spotify : Liechtenstein, Islande, Suisse, Danemark, Finlande, NorvÃ¨ge, Royaume-Uni, Monaco, SuÃ¨de, Irlande" loading="lazy">
-
-    <table>
-        <thead>
-            <tr><th>Rang</th><th>Pays</th><th>Taux / stream</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>1</td><td>Liechtenstein</td><td>0,0071 &euro;</td></tr>
-            <tr><td>2</td><td>Islande</td><td>0,0065 &euro;</td></tr>
-            <tr><td>3</td><td>Suisse</td><td>0,0058 &euro;</td></tr>
-            <tr><td>4</td><td>Danemark</td><td>0,0057 &euro;</td></tr>
-            <tr><td>5</td><td>Finlande</td><td>0,0055 &euro;</td></tr>
-            <tr><td>6</td><td>NorvÃ¨ge</td><td>0,0053 &euro;</td></tr>
-            <tr><td>7</td><td>Royaume-Uni</td><td>0,0049 &euro;</td></tr>
-            <tr><td>8</td><td>Monaco</td><td>0,0048 &euro;</td></tr>
-            <tr><td>9</td><td>SuÃ¨de</td><td>0,0047 &euro;</td></tr>
-            <tr><td>10</td><td>Irlande</td><td>0,0047 &euro;</td></tr>
-        </tbody>
-    </table>
-
-    <p>Le point commun ? Ce sont des pays avec un pouvoir d'achat Ã©levÃ©, un taux d'abonnement Premium trÃ¨s fort (plus de 90 % des Ã©coutes en Suisse, au Danemark et en Scandinavie sont Premium), et des marchÃ©s publicitaires matures.</p>
-
-    <p>Un stream depuis la Suisse rapporte presque <strong>le double</strong> d'un stream depuis la France. ConcrÃ¨tement, 100 000 Ã©coutes suisses te rapportent 580 &euro;, contre 350 &euro; pour 100 000 Ã©coutes franÃ§aises.</p>
-
-    <!-- ===================== TOP 10 WORST ===================== -->
-    <h2>Le Top 10 des pays qui rapportent le moins par stream</h2>
-
-    <p>Ã l'autre extrÃ©mitÃ© du spectre, voici les territoires oÃ¹ un stream ne vaut quasiment rien :</p>
-
-    <img src="images/top10-pays-moins-rentables-spotify.png" alt="Top 10 des pays qui rapportent le moins par stream Spotify : CÃ´te d'Ivoire, Mali, Papouasie-Nouvelle-GuinÃ©e, Malawi, Libye, Ãthiopie, Cameroun, Botswana, GuinÃ©e, Togo" loading="lazy">
-
-    <table>
-        <thead>
-            <tr><th>Rang</th><th>Pays</th><th>Taux / stream</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>1</td><td>CÃ´te d'Ivoire</td><td>0,000135 &euro;</td></tr>
-            <tr><td>2</td><td>Mali</td><td>0,000146 &euro;</td></tr>
-            <tr><td>3</td><td>Papouasie-Nouvelle-GuinÃ©e</td><td>0,000155 &euro;</td></tr>
-            <tr><td>4</td><td>Malawi</td><td>0,000160 &euro;</td></tr>
-            <tr><td>5</td><td>Libye</td><td>0,000170 &euro;</td></tr>
-            <tr><td>6</td><td>Ãthiopie</td><td>0,000172 &euro;</td></tr>
-            <tr><td>7</td><td>Cameroun</td><td>0,000174 &euro;</td></tr>
-            <tr><td>8</td><td>Botswana</td><td>0,000216 &euro;</td></tr>
-            <tr><td>9</td><td>GuinÃ©e</td><td>0,000226 &euro;</td></tr>
-            <tr><td>10</td><td>Togo</td><td>0,000228 &euro;</td></tr>
-        </tbody>
-    </table>
-
-    <p>Un stream depuis la CÃ´te d'Ivoire rapporte <strong>52 fois moins</strong> qu'un stream depuis la Suisse. Pour atteindre 1 &euro; de revenus bruts avec des Ã©coutes ivoiriennes, il faut <strong>7 407 streams</strong> &mdash; contre 287 avec des Ã©coutes franÃ§aises.</p>
-
-    <p>Ce n'est pas que ces marchÃ©s n'ont pas de valeur. C'est que le modÃ¨le Ã©conomique de Spotify (basÃ© sur le <em>pro-rata</em> du pool de revenus par pays) reflÃ¨te mÃ©caniquement le prix de l'abonnement local, le ratio Premium/gratuit, et les revenus publicitaires du territoire.</p>
-
-    <!-- ===================== FRANCE RANK ===================== -->
-    <h2>OÃ¹ se situe la France dans le classement mondial ?</h2>
-
-    <p>Avec un taux de 0,0035 &euro;/stream, <strong>la France se place au 16e rang mondial</strong> sur les 139 territoires analysÃ©s. C'est au-dessus de la mÃ©diane mondiale (0,00127 &euro;), mais en dessous de la plupart de ses voisins europÃ©ens.</p>
-
-    <img src="images/spotify-france-vs-europe.png" alt="Comparaison des taux Spotify par stream entre la France et ses voisins europÃ©ens" loading="lazy">
-
-    <p>La France est pÃ©nalisÃ©e par un ratio d'Ã©coutes gratuites plus Ã©levÃ© que ses voisins nordiques et germaniques (25 % de free en France, contre 7 Ã  10 % en Allemagne, Suisse ou Scandinavie). Plus ton public est sur le tier gratuit, plus ton taux moyen chute.</p>
-
-    <p>Un stream suisse vaut <strong>+66 %</strong> de plus qu'un stream franÃ§ais. Un stream britannique, <strong>+40 %</strong>. MÃªme l'Allemagne fait <strong>+11 %</strong> mieux que nous.</p>
-
-    <!-- ===================== MONTHLY ===================== -->
-    <h2>L'Ã©volution mois par mois : une tendance Ã  surveiller</h2>
-
-    <img src="images/evolution-taux-spotify-france.png" alt="Ãvolution du taux par stream Spotify en France sur un trimestre" loading="lazy">
-
-    <ul>
-        <li><strong>Juillet</strong> : 3,60 &euro; pour 1 000 streams</li>
-        <li><strong>AoÃ»t</strong> : 3,42 &euro; pour 1 000 streams</li>
-        <li><strong>Septembre</strong> : 3,41 &euro; pour 1 000 streams</li>
-    </ul>
-
-    <p>Soit une baisse de 5 % en trois mois. Cette tendance s'explique par la saisonnalitÃ© (l'Ã©tÃ© voit souvent une hausse des Ã©coutes sur le tier gratuit, ce qui dilue le taux moyen) et par l'augmentation globale du nombre de streams qui se rÃ©partissent sur un pool de revenus qui ne croÃ®t pas au mÃªme rythme.</p>
-
-    <!-- ===================== TAKEAWAYS ===================== -->
-    <h2>Ce qu'il faut retenir (et ce que personne ne te dit)</h2>
-
-    <div class="takeaway">
-        <span class="takeaway-number">1</span><strong>Le chiffre "moyen" est un piÃ¨ge.</strong>
-        <p>Dire qu'un stream Spotify rapporte 0,003 Ã  0,005 &euro; est techniquement vrai mais pratiquement inutile. Le vrai chiffre dÃ©pend du pays de ton auditeur, de son type d'abonnement, et de la pÃ©riode. Un mÃªme morceau peut rapporter 0,0071 &euro; (Liechtenstein, Premium) ou 0,000135 &euro; (CÃ´te d'Ivoire, gratuit).</p>
-    </div>
-
-    <div class="takeaway">
-        <span class="takeaway-number">2</span><strong>La gÃ©ographie de ton audience dÃ©termine tes revenus.</strong>
-        <p>Un artiste avec 100 000 streams venant de Suisse gagne autant qu'un artiste avec 190 000 streams venant de France. Cibler des audiences dans des pays Ã  fort taux n'est pas juste une question de prestige &mdash; c'est une question de rentabilitÃ©.</p>
-    </div>
-
-    <div class="takeaway">
-        <span class="takeaway-number">3</span><strong>Le ratio Premium/gratuit est le levier invisible.</strong>
-        <p>En France, 75 % d'Ã©coutes Premium. En Suisse, 91 %. Cette diffÃ©rence explique une grande partie de l'Ã©cart de rÃ©munÃ©ration. Plus ta fanbase est constituÃ©e d'abonnÃ©s payants, plus chaque stream a de valeur.</p>
-    </div>
-
-    <div class="takeaway">
-        <span class="takeaway-number">4</span><strong>Spotify seul ne fait pas vivre un artiste.</strong>
-        <p>Il faut 410 000 streams par mois rien qu'en France pour atteindre un SMIC brut &mdash; et c'est avant la rÃ©partition entre tous les ayants droit. Le streaming est une brique de revenus, pas le chÃ¢teau entier. Les revenus d'un artiste se construisent avec le live, le merch, la synchro, l'Ã©dition, et les droits voisins.</p>
-    </div>
-
-    <div class="takeaway">
-        <span class="takeaway-number">5</span><strong>La tendance est Ã  la baisse.</strong>
-        <p>Le nombre d'utilisateurs et de streams augmente plus vite que les revenus de la plateforme. MÃ©caniquement, le taux par stream s'Ã©rode. C'est une rÃ©alitÃ© structurelle du modÃ¨le pro-rata de Spotify.</p>
-    </div>
-
-    <!-- ===================== CTA SHARE ===================== -->
-    <div class="cta-share">
-        <h3>Si cet article t'a ouvert les yeux, partage-le.</h3>
-        <p>Plus on est nombreux Ã  comprendre comment fonctionne rÃ©ellement la rÃ©munÃ©ration du streaming, plus on pourra collectivement faire bouger les choses.</p>
-        <div class="share-buttons">
-            <a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=Combien%20rapporte%20vraiment%20un%20stream%20Spotify%20%3F%20Les%20vrais%20chiffres%20d%27un%20label%20ind%C3%A9pendant&url=https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" rel="noopener">X / Twitter</a>
-            <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" rel="noopener">Facebook</a>
-            <a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="share-btn whatsapp" href="https://wa.me/?text=Combien%20rapporte%20vraiment%20un%20stream%20Spotify%20%3F%20https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" rel="noopener">WhatsApp</a>
-            <button class="share-btn copy" onclick="navigator.clipboard.writeText('https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html').then(()=>this.textContent='CopiÃ© !')">Copier le lien</button>
+        <h2>Ce que rapporte r&#233;ellement 1 stream Spotify en France</h2>
+        <p>Commen&#231;ons par ce qui t&#8217;int&#233;resse probablement le plus si tu es artiste, producteur ou manager bas&#233; en France :</p>
+        <div class="stat-card">
+            <div class="number">0,0035 &#8364;</div>
+            <div class="label">Taux moyen d&#8217;un stream Spotify en France (soit 0,00378 $)</div>
         </div>
-    </div>
+        <p>Mais ce chiffre ne veut rien dire tout seul. Parce que derri&#232;re cette &#171; moyenne &#187;, se cachent deux r&#233;alit&#233;s tr&#232;s diff&#233;rentes.</p>
 
-    <!-- ===================== METHODOLOGY ===================== -->
-    <div class="methodology">
-        <strong>MÃ©thodologie</strong> &mdash; Cet article repose sur l'analyse de <strong>2 170 557 streams Spotify</strong> rÃ©partis sur <strong>181 pays</strong> sur un trimestre complet. Les donnÃ©es proviennent des relevÃ©s de distribution d'un label indÃ©pendant franÃ§ais multi-artistes. Les taux sont exprimÃ©s en revenus bruts (Gross Revenue) avant rÃ©partition contractuelle. La conversion EUR/USD est basÃ©e sur un taux approximatif de 0,92. Seuls les pays totalisant un minimum de 100 streams sur la pÃ©riode ont Ã©tÃ© retenus pour les classements par pays (139 pays qualifiÃ©s sur 181).
-    </div>
+        <h2>L&#8217;&#233;coute Premium vs l&#8217;&#233;coute gratuite : le gouffre</h2>
+        <div class="vs-container">
+            <div class="vs-card vs-premium"><div class="num">0,0044 &#8364;</div><div class="lab">Stream Premium</div></div>
+            <div class="vs-card vs-free"><div class="num">0,00085 &#8364;</div><div class="lab">Stream Gratuit</div></div>
+        </div>
+        <div class="chart">
+            <div class="chart-title">Taux par stream : Premium vs Gratuit en France</div>
+            <div class="bar-row"><span class="bar-label">Premium</span><div class="bar-container"><div class="bar bar-green" style="width:100%">0,0044 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Gratuit</span><div class="bar-container"><div class="bar bar-red" style="width:19%">0,00085 &#8364;</div></div></div>
+        </div>
+        <p>Quand un abonn&#233; Spotify Premium &#233;coute ton morceau en France, tu touches <strong>0,0044 &#8364;</strong> par stream. Quand c&#8217;est un utilisateur du tier gratuit, c&#8217;est <strong>0,00085 &#8364;</strong>. Soit <strong>5 fois plus</strong> pour un stream Premium.</p>
+        <p>Et la r&#233;partition n&#8217;est pas anodine : en France, <strong>75 % des &#233;coutes proviennent d&#8217;abonn&#233;s Premium</strong> et 25 % du tier gratuit.</p>
 
-    <p style="text-align:center; color:#888; font-size:0.9rem; margin-top:2rem;"><em>Cet article est mis Ã  jour rÃ©guliÃ¨rement avec de nouvelles donnÃ©es de distribution.</em></p>
+        <h2>Combien de streams pour gagner de l&#8217;argent ?</h2>
+        <div class="chart">
+            <div class="chart-title">Nombre de streams n&#233;cessaires</div>
+            <div class="bar-row"><span class="bar-label">1 &#8364;</span><div class="bar-container"><div class="bar bar-blue" style="width:5%">287</div></div></div>
+            <div class="bar-row"><span class="bar-label">10 &#8364;</span><div class="bar-container"><div class="bar bar-blue" style="width:10%">2 874</div></div></div>
+            <div class="bar-row"><span class="bar-label">100 &#8364;</span><div class="bar-container"><div class="bar bar-blue" style="width:25%">28 740</div></div></div>
+            <div class="bar-row"><span class="bar-label">1 000 &#8364;</span><div class="bar-container"><div class="bar bar-blue" style="width:60%">287 397</div></div></div>
+            <div class="bar-row"><span class="bar-label">1 SMIC (1 426 &#8364;)</span><div class="bar-container"><div class="bar bar-purple" style="width:85%">~410 000 / mois</div></div></div>
+        </div>
+        <p>Et attention : ces montants sont <strong>bruts</strong>, avant la r&#233;partition entre le label, le distributeur, l&#8217;artiste, l&#8217;&#233;diteur et les organismes de gestion collective.</p>
 
-</article>
+        <h2>Le Top 10 des pays qui rapportent le plus par stream</h2>
+        <div class="chart">
+            <div class="chart-title">Top 10 &#8212; Taux les plus &#233;lev&#233;s par stream</div>
+            <div class="bar-row"><span class="bar-label">Liechtenstein</span><div class="bar-container"><div class="bar bar-gold" style="width:100%">0,0071 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Islande</span><div class="bar-container"><div class="bar bar-gold" style="width:92%">0,0065 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Suisse</span><div class="bar-container"><div class="bar bar-gold" style="width:82%">0,0058 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Danemark</span><div class="bar-container"><div class="bar bar-gold" style="width:80%">0,0057 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Finlande</span><div class="bar-container"><div class="bar bar-gold" style="width:77%">0,0055 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Norv&#232;ge</span><div class="bar-container"><div class="bar bar-gold" style="width:75%">0,0053 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Royaume-Uni</span><div class="bar-container"><div class="bar bar-gold" style="width:69%">0,0049 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Monaco</span><div class="bar-container"><div class="bar bar-gold" style="width:68%">0,0048 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Su&#232;de</span><div class="bar-container"><div class="bar bar-gold" style="width:66%">0,0047 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Irlande</span><div class="bar-container"><div class="bar bar-gold" style="width:66%">0,0047 &#8364;</div></div></div>
+        </div>
+        <p>Le point commun ? Des pays avec un pouvoir d&#8217;achat &#233;lev&#233;, un taux d&#8217;abonnement Premium tr&#232;s haut et un nombre d&#8217;utilisateurs relativement faible par rapport aux revenus.</p>
+        <p>Un stream depuis la Suisse rapporte presque <span class="highlight">le double</span> d&#8217;un stream depuis la France.</p>
 
-<footer>
-    <p>&copy; 2026 <a href="https://lykylabelfrance.github.io/">LYKY LABEL FRANCE SASU</a> &mdash; Tous droits rÃ©servÃ©s | Membre SACEM &middot; SPPF &middot; SNEP</p>
-</footer>
+        <h2>Le Top 10 des pays qui rapportent le moins</h2>
+        <div class="chart">
+            <div class="chart-title">Top 10 &#8212; Taux les plus bas par stream</div>
+            <div class="bar-row"><span class="bar-label">C&#244;te d&#8217;Ivoire</span><div class="bar-container"><div class="bar bar-red" style="width:15%">0,000135 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Mali</span><div class="bar-container"><div class="bar bar-red" style="width:17%">0,000146 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Papouasie-N-G</span><div class="bar-container"><div class="bar bar-red" style="width:18%">0,000155 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Malawi</span><div class="bar-container"><div class="bar bar-red" style="width:19%">0,000160 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Libye</span><div class="bar-container"><div class="bar bar-red" style="width:20%">0,000170 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">&#201;thiopie</span><div class="bar-container"><div class="bar bar-red" style="width:20%">0,000172 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Cameroun</span><div class="bar-container"><div class="bar bar-red" style="width:21%">0,000174 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Botswana</span><div class="bar-container"><div class="bar bar-red" style="width:25%">0,000216 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Guin&#233;e</span><div class="bar-container"><div class="bar bar-red" style="width:26%">0,000226 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Togo</span><div class="bar-container"><div class="bar bar-red" style="width:27%">0,000228 &#8364;</div></div></div>
+        </div>
+        <p>Un stream depuis la C&#244;te d&#8217;Ivoire rapporte <span class="highlight">52 fois moins</span> qu&#8217;un stream depuis la Suisse. Pour atteindre 1 &#8364;, il faut <strong>7 407 streams</strong>.</p>
 
+        <h2>O&#249; se situe la France ?</h2>
+        <p>Avec 0,0035 &#8364;/stream, <strong>la France se place au 16e rang mondial</strong> sur 139 territoires. Au-dessus de la m&#233;diane, mais en dessous des pays scandinaves et anglo-saxons.</p>
+        <div class="chart">
+            <div class="chart-title">France vs voisins europ&#233;ens</div>
+            <div class="bar-row"><span class="bar-label">Suisse</span><div class="bar-container"><div class="bar bar-gold" style="width:100%">0,0058 &#8364; (+66%)</div></div></div>
+            <div class="bar-row"><span class="bar-label">Royaume-Uni</span><div class="bar-container"><div class="bar bar-blue" style="width:84%">0,0049 &#8364; (+40%)</div></div></div>
+            <div class="bar-row"><span class="bar-label">Su&#232;de</span><div class="bar-container"><div class="bar bar-blue" style="width:81%">0,0047 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Allemagne</span><div class="bar-container"><div class="bar bar-blue" style="width:67%">0,0039 &#8364; (+11%)</div></div></div>
+            <div class="bar-row"><span class="bar-label">&#127467;&#127479; France</span><div class="bar-container"><div class="bar bar-green" style="width:60%">0,0035 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Espagne</span><div class="bar-container"><div class="bar bar-blue" style="width:52%">0,0030 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Italie</span><div class="bar-container"><div class="bar bar-blue" style="width:48%">0,0028 &#8364;</div></div></div>
+        </div>
+
+        <h2>&#201;volution mois par mois</h2>
+        <div class="chart">
+            <div class="chart-title">Taux pour 1 000 streams en France (Q3 2025)</div>
+            <div class="bar-row"><span class="bar-label">Juillet</span><div class="bar-container"><div class="bar bar-green" style="width:100%">3,60 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Ao&#251;t</span><div class="bar-container"><div class="bar bar-blue" style="width:95%">3,42 &#8364;</div></div></div>
+            <div class="bar-row"><span class="bar-label">Septembre</span><div class="bar-container"><div class="bar bar-blue" style="width:94%">3,41 &#8364;</div></div></div>
+        </div>
+        <p>Soit une baisse de 5 % en trois mois. Cette tendance s&#8217;explique par la saisonnalit&#233; et l&#8217;augmentation continue du nombre d&#8217;utilisateurs sans croissance proportionnelle des revenus.</p>
+
+        <h2>Ce qu&#8217;il faut retenir</h2>
+        <div class="takeaway"><div class="title">Le chiffre &#171; moyen &#187; est un pi&#232;ge.</div><p>Ton taux r&#233;el d&#233;pend de ta g&#233;ographie d&#8217;audience, du ratio Premium/gratuit et de la p&#233;riode.</p></div>
+        <div class="takeaway"><div class="title">La g&#233;ographie de ton audience d&#233;termine tes revenus.</div><p>100 000 streams suisses = 190 000 streams fran&#231;ais en revenus.</p></div>
+        <div class="takeaway"><div class="title">Le ratio Premium/gratuit est le levier invisible.</div><p>France : 75 % Premium. Suisse : 91 %. Cet &#233;cart explique tout.</p></div>
+        <div class="takeaway"><div class="title">Spotify seul ne fait pas vivre un artiste.</div><p>410 000 streams/mois pour un SMIC brut &#8212; avant r&#233;partition.</p></div>
+        <div class="takeaway"><div class="title">La tendance est &#224; la baisse.</div><p>Plus d&#8217;utilisateurs, m&#234;me pool de revenus = taux qui diminue.</p></div>
+
+        <div class="share-section">
+            <h2>Partage cet article</h2>
+            <p>Plus on comprend le streaming, plus on peut faire bouger les choses.</p>
+            <div class="share-buttons">
+                <a href="https://twitter.com/intent/tweet?text=Combien%20rapporte%20un%20stream%20Spotify%20%3F%20Les%20vrais%20chiffres&url=https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" class="btn-x">X / Twitter</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" class="btn-fb">Facebook</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" class="btn-li">LinkedIn</a>
+                <a href="https://wa.me/?text=Combien%20rapporte%20un%20stream%20Spotify%20%3F%20https://lykylabelfrance.github.io/blog/combien-rapporte-un-stream-spotify.html" target="_blank" class="btn-wa">WhatsApp</a>
+                <button class="btn-copy" onclick="navigator.clipboard.writeText(window.location.href).then(()=>this.textContent='Copi&#233; !')">Copier le lien</button>
+            </div>
+        </div>
+        <div class="methodology">
+            <p><strong>M&#233;thodologie</strong> &#8212; Analyse de <strong>2 170 557 streams Spotify</strong> sur <strong>181 pays</strong> (Q4 2025). Donn&#233;es Revelator France, LYKY LABEL FRANCE.</p>
+        </div>
+    </article>
+    <footer>
+        <p>&#169; 2026 <a href="https://lykylabelfrance.github.io/">LYKY LABEL FRANCE SASU</a> &#8212; Tous droits r&#233;serv&#233;s | Membre SACEM &#183; SPPF &#183; SNEP</p>
+    </footer>
 </body>
 </html>
