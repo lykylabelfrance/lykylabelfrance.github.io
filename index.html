@@ -2150,162 +2150,36 @@
                 </div>
             </section>
 
-<section id="catalogue" class="scroll-reveal">
-        <h2>Catalogue SACEM & SPPF</h2>
-        <p style="text-align: center; color: var(--gray-text); margin-bottom: 10px;">152 œuvres SACEM · 186 phonogrammes SPPF · 97 vidéoclips</p>
-        <div class="catalogue-filters">
-            <button class="filter-btn active" data-filter="all">Tous</button>
-            <button class="filter-btn" data-filter="chant">Chant</button>
-            <button class="filter-btn" data-filter="jazz">Jazz</button>
-            <button class="filter-btn" data-filter="instrumental">Instrumental</button>
+<section id="catalogue" class="dark-section">
+        <div class="container">
+            <h2 class="section-title">Catalogue</h2>
+            <p style="text-align:center;color:rgba(255,255,255,0.6);margin-bottom:25px;">186 phonogrammes &middot; Sources : SACEM &amp; SPPF &middot; Mars 2026</p>
+            <div class="filter-buttons" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:30px;">
+                <button class="filter-btn active" data-filter="all">Tous (186)</button><button class="filter-btn" data-filter="zouk">Zouk (93)</button><button class="filter-btn" data-filter="musique-du-monde">Musique du monde (27)</button><button class="filter-btn" data-filter="dancehall">Dancehall (26)</button><button class="filter-btn" data-filter="afrobeat">Afrobeat (25)</button><button class="filter-btn" data-filter="autre">Autre (14)</button><button class="filter-btn" data-filter="hip-hop">Hip Hop (1)</button>
+            </div>
+            <div style="max-height:600px;overflow-y:auto;padding-right:10px;" id="catalogue-list"></div>
+            <p style="text-align:center;margin-top:20px;font-size:0.8rem;color:rgba(255,255,255,0.4);">Catalogue phonographique LYKY LABEL FRANCE &middot; SPPF / SACEM</p>
         </div>
-        <div class="catalogue-grid" id="catalogue-grid">
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Au Delà De Tout</h4>
-                <div class="track-artist">Maëva Fourez</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Dans Le Silence</h4>
-                <div class="track-artist">Maëva Fourez</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Ça Ira</h4>
-                <div class="track-artist">Maëva Fourez</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Cantar</h4>
-                <div class="track-artist">Maëva Fourez</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="instrumental">
-                <div class="track-cover">♪</div>
-                <h4>Ambulância</h4>
-                <div class="track-artist">DJ Kalisboy</div>
-                <div class="track-meta">Instrumental · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>A Salsicha</h4>
-                <div class="track-artist">DJ Kalisboy</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Ano Novo</h4>
-                <div class="track-artist">DJ Kalisboy</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Companhia</h4>
-                <div class="track-artist">DJ Kalisboy</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Vou E Mwen Vem</h4>
-                <div class="track-artist">Ben-G</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Si Tu Veux De Moi</h4>
-                <div class="track-artist">Ben-G</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>A Mes Côtés</h4>
-                <div class="track-artist">Lauret Clément</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>A Vélo</h4>
-                <div class="track-artist">DJ M Sy</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Abîme</h4>
-                <div class="track-artist">Enrick Maillot</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Addict</h4>
-                <div class="track-artist">Jay Brixxx</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Aghira</h4>
-                <div class="track-artist">Aemann</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Babs Bunny</h4>
-                <div class="track-artist">Majesty Yana</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="instrumental">
-                <div class="track-cover">♪</div>
-                <h4>Baby Boy</h4>
-                <div class="track-artist">Laconi</div>
-                <div class="track-meta">Instrumental · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Baki Na Wam</h4>
-                <div class="track-artist">Berlando Joel</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Rashel</h4>
-                <div class="track-artist">Rashel</div>
-                <div class="track-meta">Chant · SPPF</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Kueena</h4>
-                <div class="track-artist">Kueena</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Ain't Got The Flowers</h4>
-                <div class="track-artist">Maëva Fourez</div>
-                <div class="track-meta">Chant · SACEM</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Charlin Bato</h4>
-                <div class="track-artist">Charlin Bato</div>
-                <div class="track-meta">Chant · SPPF</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Djelissa</h4>
-                <div class="track-artist">Djelissa</div>
-                <div class="track-meta">Chant · SPPF</div>
-            </div>
-            <div class="track-card" data-genre="chant">
-                <div class="track-cover">♪</div>
-                <h4>Rolian</h4>
-                <div class="track-artist">Rolian</div>
-                <div class="track-meta">Chant · SPPF</div>
-            </div>
-        </div>
-        <p style="text-align: center; margin-top: 20px; color: var(--gray-text); font-size: 13px;">Extraits du catalogue · Membre SACEM n°1663898 · Membre SPPF · SNEP · EIFEIL · ASCAP · SOCAN</p>
+        <script>
+        (function(){
+            var T=[["7 NUIT","DORY","Zouk","00:03:40","2020"],["A CHAK FWA","CHARLIN BATO","Zouk","00:03:28","2022"],["A CHAK FWA (REMIX)","CHARLIN BATO, ANDYBEATZ, GIO K, J BRIAN STEVES","Zouk","00:03:51","2023"],["A TI A I NI A","LAURENT DEGACHE","Musique du monde","00:03:00","2022"],["ABIME","RASHEL, MAGICAL NRICK","Zouk","00:02:31","2024"],["ACCELERER","JOSEY","Afrobeat","00:03:16","2021"],["AFRIKA","WIZDOM","Autre","00:03:41","2019"],["AH PUTAIN HE","T MATT","Autre","00:03:04","2020"],["ALICE","MIK L","Zouk","00:03:20","2014"],["ALL NIGHT","RASHEL, WHITY MATIMAL","Zouk","00:03:02","2022"],["ALLER LOIN","MIK L","Zouk","00:04:18","2020"],["ALLEZ VIENS","ROLIAN, DJELISSA","Zouk","00:04:14","2014"],["AMBIANCE A LA COTIERE","JOSEY","Autre","00:04:01","2022"],["AMBULANCIA (AFROBEAT)","DJ BLACK SPYGO, DJ KALISBOY","Autre","00:03:20","2024"],["AMOR","CHABSY, MC DY","Zouk","00:02:30","2024"],["AN TCHE MWEN","DORY","Autre","00:03:59","2016"],["AN TI DOUSE (DJ CHARLAN REMIX 2","STEPHANY, MAINY, DJ CHARLAN","Zouk","00:03:36","2021"],["APETAHI","MANAARII MARUHI","Autre","00:04:07","2023"],["APPELLE MOI","BORGIA","Zouk","00:04:05","2023"],["ASSIZ A OU LA","WIZDOM","Autre","00:04:38","2019"],["AVEC LE TEMPS","JMAX, CHABSY","Zouk","00:03:08","2022"],["AYMIE (EXTEND)","MIK L, DJ LUKA","Zouk","00:05:57","2021"],["AYMIE (REPONSE A TAYC)","MIK L","Zouk","00:04:18","2020"],["BAD LOVE","STEPHANY, MAINY","Zouk","00:03:41","2019"],["BAD LYRICS","ROMANPY","Autre","00:02:20","2013"],["BAE","ROMANPY","Autre","00:03:02","2021"],["BEAT DO TIK TOK","DJ KALISBOY","Autre","00:01:38","2022"],["BEBE","LEA CHURROS, RM N PROD, VARAINE BEN","Zouk","00:02:57","2021"],["BONOBO","ALOMAN","Autre","00:02:50","2013"],["C EST PAR L ENCRE DE TON COEUR","JOHN GABILOU, GABRIEL LEWIS","Musique du monde","00:03:35","2021"],["CASSE QUE LE BAS","T MATT","Dancehall","00:03:41","2016"],["CE SOIR (EDIT)","T MATT","Zouk","00:03:48","2020"],["CETTE NUIT","ROMANPY","Dancehall","00:03:08","2021"],["CHERIE","MAINY","Zouk","00:04:35","2018"],["COEUR EN DANGER","MAINY","Zouk","00:03:40","2018"],["COLLE TOI A MOI","SWE, MAIKO, JORDAN M","Zouk","00:03:40","2015"],["COPILOTE","ROMANPY","Dancehall","00:03:22","2020"],["COUP DE GUEULE","JOSEY","Afrobeat","00:03:46","2022"],["DAIMA","KUEENA","Zouk","00:03:26","2022"],["DANS MON MAIN (EXTENDED)","WIZDOM","Musique du monde","00:04:01","2019"],["DANS SES YEUX","MAINY","Zouk","00:03:05","2018"],["DANSE","ROMANPY","Dancehall","00:02:45","2021"],["DEMARRER","MAINY","Zouk","00:03:06","2022"],["DEPOSER LES ARMES","DJ FLOZIO, JORDAN M","Zouk","00:04:27","2018"],["DESTINEE","MEE ANN","Zouk","00:03:54","2017"],["DILEMME","DORY","Zouk","00:04:17","2017"],["DIPLOME","JOSEY","Afrobeat","00:04:12","2016"],["DIS MOI LOVE EN CHANTANT","WEENA TEMAURI","Autre","00:04:41","2020"],["DIVISER","MAINY","Zouk","00:03:01","2022"],["DOUCEUR","RASHEL","Zouk","00:02:48","2023"],["DOUDOU","MAINY","Zouk","00:03:49","2014"],["DSL (DESOLE)","MAINY, MEL S","Zouk","00:03:30","2013"],["ENCORE","AINA QUACH, CHABSY","Zouk","00:03:06","2023"],["FAUX 2 FAUX (EDIT)","T MATT","Dancehall","00:03:47","2018"],["FELEE","T MATT","Dancehall","00:03:27","2018"],["FOLLOW ME","STANLEY ENOW","Afrobeat","00:03:37","2016"],["FROTTER","T MATT","Dancehall","00:03:50","2017"],["GABRIELLA","ROMANPY","Dancehall","00:02:38","2021"],["GAZA VYBZ","ROMANPY","Dancehall","00:02:14","2013"],["HEIN PERE","STANLEY ENOW","Afrobeat","00:03:52","2016"],["HORS DU TIME","WIZDOM","Musique du monde","00:03:19","2016"],["ICI","WIZDOM","Musique du monde","00:04:02","2021"],["INTRO","T MATT","Dancehall","00:04:14","2016"],["INTRODUCTION DJ W","MAINY","Zouk","00:02:03","2018"],["IRREMPLACABLE","RASHEL","Zouk","00:02:52","2021"],["JE SUIS REVENUE","JOSEY","Afrobeat","00:02:55","2022"],["JE T ATTIRE","DOC J, DJELISSA","Zouk","00:03:39","2014"],["JE TE CHERCHE","DJELISSA","Zouk","00:04:42","2013"],["JE TE KALA PAS","JOSEY","Afrobeat","00:02:47","2023"],["JUSQU AU BOUT DU MONDE","MARVIN, LEA CHURROS","Zouk","00:03:33","2024"],["JUSTE NOUS","MAINY","Zouk","00:04:09","2021"],["KAFRINE","JONA, BEN G","Zouk","00:04:04","2016"],["KOLE","CHARLIN BATO","Zouk","00:03:31","2020"],["KOM DAB","T MATT","Dancehall","00:02:28","2019"],["L OISEAU DES OCEANS","TEIVA LC, TIARE TETOE","Musique du monde","00:03:29","2020"],["LA FETE","STANLEY ENOW","Afrobeat","00:03:56","2019"],["LA KOULER","WIZDOM","Musique du monde","00:03:38","2019"],["LA VERITE","JOSEY, 2BOY","Afrobeat","00:03:33","2020"],["LAGE CHA","CHARLIN BATO","Zouk","00:03:41","2021"],["LAISSE MOI","INDIRA, DJ M SY","Zouk","00:03:05","2023"],["LAISSE TOI ALLER","LEA CHURROS, RM N PROD","Zouk","00:03:45","2022"],["LAISSE TOMBER","MAINY","Zouk","00:03:30","2023"],["LE MONDE EST MECHANT","JOSEY","Afrobeat","00:03:30","2022"],["LE SUCRE","BORGIA","Zouk","00:03:26","2022"],["LIONNE","ROMANPY","Dancehall","00:02:44","2018"],["LLAMA","RASHEL","Zouk","00:02:23","2023"],["LUNA","MAINY","Zouk","00:03:31","2020"],["MA MOITIE","JOSEY","Afrobeat","00:03:27","2021"],["MA VIE","LAUREEN ROSE","Zouk","00:03:25","2020"],["METISSAGE","WIZDOM","Musique du monde","00:04:28","2019"],["METISSE","DJ LOF, ROMANPY","Dancehall","00:03:06","2021"],["MON DESTINE","RASHEL","Zouk","00:04:16","2020"],["MON FOND KER","WIZDOM, SEBASTIEN LAURET, THOMAS POUZIN","Musique du monde","00:03:44","2020"],["MON FORCE","WIZDOM, SEBASTIEN LAURET","Musique du monde","00:03:34","2021"],["MON LIMIER","MIK L","Zouk","00:04:07","2022"],["MON PECHE","LYCINAIS JEAN, LEA CHURROS, RM N PROD","Zouk","00:03:28","2022"],["MORE FAYA","ROMANPY","Dancehall","00:03:03","2021"],["MOUVEMENT","DJ LOF, ROMANPY","Dancehall","00:03:30","2019"],["MWEN ENVI","MELODEEK, DJELISSA","Zouk","00:03:45","2021"],["MWEN ENVI (REMIX)","BORGIA","Zouk","00:03:56","2022"],["MY WAY","LOCKO, STANLEY ENOW, TZY PANCHAKO","Afrobeat","00:04:04","2018"],["MY WAY (REMIX)","STANLEY ENOW, DIAMOND PLATNUMZ, ARIEL SHENEY","Autre","00:04:24","2019"],["NA LINGUI YO","HIRO, JOSEY","Afrobeat","00:03:23","2023"],["NA PI PER","WIZDOM","Musique du monde","00:02:56","2019"],["NAPALA","T MATT","Dancehall","00:02:45","2017"],["NE M OUBLIE PAS","JORDAN M","Zouk","00:04:15","2014"],["NE T EN VAS PAS","BEN G, KUEENA","Zouk","00:03:45","2023"],["NE T EN VAS PAS (EXTENDED)","BEN G, KUEENA","Zouk","00:04:19","2023"],["NEYMAR (FREESTYLE)","T MATT","Dancehall","00:02:35","2017"],["NOEL EST LA","HEIMATA KRAUSE","Musique du monde","00:04:16","2019"],["NOTRE HISTOIRE","DJELISSA","Zouk","00:03:59","2018"],["NOTRE HISTOIRE (KONPA VERSION)","DJELISSA, DJ KAN3Z","Zouk","00:03:47","2020"],["NPNG","WIZDOM","Musique du monde","00:03:54","2019"],["NYONGO","STANLEY ENOW","Afrobeat","00:03:30","2022"],["ON S EN BAT LES","T MATT, NOAH LUNSI, LARO","Hip Hop","00:04:03","2018"],["ONLY YOU","CHARLIN BATO","Zouk","00:03:27","2020"],["OUI JE T AIME","SHONY, HYBE ONE","Zouk","00:04:12","2023"],["PA SI MOVE","K REEN, MAINY","Zouk","00:03:56","2016"],["PAR DELA L OCEAN","EDDY KELLY","Musique du monde","00:02:58","2021"],["PARADIS","WIZDOM, SEBASTIEN LAURET, THOMAS POUZIN","Musique du monde","00:04:41","2020"],["PARADIS (IS)","WIZDOM, SEBASTIEN LAURET","Musique du monde","00:04:40","2020"],["PARAPARIPARO","STANLEY ENOW","Afrobeat","00:03:07","2022"],["PAYANKE","WIZDOM","Musique du monde","00:03:57","2021"],["PENALTY","T MATT","Dancehall","00:02:33","2018"],["PENCHE TOI","MAINY","Zouk","00:03:33","2015"],["PIQUE","RASHEL","Zouk","00:02:30","2023"],["PIQUE","MAINY, NESLY","Zouk","00:04:14","2022"],["PLUS JAMAIS","KENNY T, JORDAN M","Zouk","00:04:20","2017"],["POLLEN","MAINY","Zouk","00:03:55","2018"],["PORINETIA","SHEYN","Musique du monde","00:03:35","2021"],["POUR NOUS","RASHEL","Zouk","00:03:00","2023"],["POUR TOI","DJELISSA, T JY","Zouk","00:03:32","2015"],["POUR TOI","CHABSY","Zouk","00:03:27","2023"],["PRAY FOR ME","STANLEY ENOW","Afrobeat","00:03:55","2017"],["PU LA","ROMANPY","Dancehall","00:02:34","2020"],["REBELOTTE","JOSEY","Afrobeat","00:03:38","2021"],["REEL","ALOMAN","Autre","00:02:30","2022"],["RENYON LA","WIZDOM, KAF MALBAR","Musique du monde","00:04:52","2019"],["RESTE ENCORE","T MATT","Dancehall","00:03:51","2020"],["SAN WONT","CHARLIN BATO","Zouk","00:05:06","2016"],["SAVOIR DONNER","MAINY","Zouk","00:03:26","2018"],["SE OU MWEN LE","MAINY","Zouk","00:03:49","2015"],["SENSIBLE","GWINS","Zouk","00:02:39","2024"],["SENTIMENTS CACHES","MYLDNESS","Zouk","00:03:47","2017"],["SEUL","CHABSY","Zouk","00:03:58","2022"],["SI SEULEMENT","MIK L","Zouk","00:05:04","2021"],["SORRY","JOSEY","Afrobeat","00:03:50","2020"],["SUCCOMBER","LEA CHURROS","Zouk","00:04:07","2024"],["SUMMERTIME","ROMANPY","Dancehall","00:03:07","2020"],["SUPERMAN","MAINY","Zouk","00:04:17","2017"],["SUSPENSION","DJ LOF, ROMANPY","Dancehall","00:02:34","2020"],["TAKE OVA","STANLEY ENOW","Afrobeat","00:02:41","2023"],["TI KOZ SI MWIN","SOLDAT TATANE, T MATT, MC JOJO","Dancehall","00:03:18","2012"],["TI MANMAN","CHARLIN BATO","Zouk","00:02:31","2022"],["TI PRIERE (IS)","WIZDOM, SEBASTIEN LAURET","Musique du monde","00:03:51","2020"],["TITAINA","SHEYN","Musique du monde","00:03:09","2022"],["TODOS DIAS","MEILYNN","Zouk","00:03:00","2018"],["TOUR DE GARDE","T MATT","Dancehall","00:03:19","2016"],["TOUR DU MONDE","LA SYNESIA, JORDAN M","Zouk","00:03:44","2019"],["TOURNER LA TETE","RASHEL","Zouk","00:02:54","2021"],["TOUT DONNER","LEA CHURROS, RM N PROD","Zouk","00:02:56","2022"],["TOUT DOUCEMENT","SHEYN","Musique du monde","00:04:00","2020"],["TRAHISON","DORY","Zouk","00:03:33","2019"],["TROP DE VICES","DOMINIQUE LORTE, MAINY","Zouk","00:03:55","2015"],["TROP POUR MOI","DORY","Zouk","00:04:26","2019"],["TU ME DONNES CHAUD","DJELISSA, T MATT","Zouk","00:03:59","2017"],["TU ME REND FOU (TMRF)","BEN G","Zouk","00:03:44","2018"],["TU VAS LIRE L HEURE","STANLEY ENOW","Afrobeat","00:03:19","2020"],["TU VAS LIRE L HEURE (REMIX)","STANLEY ENOW, KAMR ALL STARS","Afrobeat","00:03:49","2021"],["VAHINE","SHEYN","Musique du monde","00:03:27","2021"],["VALIDE","ROLIAN, BEN G, DJELISSA","Zouk","00:03:47","2022"],["VENEZ BOUGER","JOSEY","Afrobeat","00:03:12","2023"],["VIDE","RASHEL","Zouk","00:02:20","2022"],["VIENS","WIZDOM","Musique du monde","00:03:25","2022"],["VIVRE OU PARDONNER","LEA CHURROS, GWINS","Zouk","00:03:02","2023"],["VIVRE OU PARDONNER (REMIX DJ TY","LEA CHURROS","Zouk","00:03:53","2024"],["VOU E MWEN","BEN G, DJELISSA","Zouk","00:03:55","2017"],["VRAI 2 VRAI","T MATT","Dancehall","00:04:30","2016"],["VSM","MAINY","Zouk","00:03:48","2024"],["VTME","ROMANPY","Dancehall","00:03:10","2021"],["WAKANDA","BORGIA","Afrobeat","00:02:51","2022"],["WAKANDA (EXTENDED)","BORGIA","Afrobeat","00:02:51","2022"],["WAYO MAMA","WIZDOM","Musique du monde","00:04:44","2020"],["ZAMBELEMAN","JOSEY, BONIGO","Afrobeat","00:04:29","2021"],["ZENFAN BONDIE","PIX L, WIZDOM","Musique du monde","00:04:09","2020"],["ZOLI TREZOR","WIZDOM","Musique du monde","00:03:38","2019"]];
+            var cl=document.getElementById("catalogue-list");
+            function r(f){cl.innerHTML="";T.forEach(function(t){
+                var g=t[2].toLowerCase().replace(/ /g,"-").replace(/'/g,"");
+                if(f!=="all"&&g!==f)return;
+                var d=document.createElement("div");d.className="catalogue-item";d.dataset.category=g;
+                d.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 15px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;margin-bottom:4px;"><div style="flex:1;min-width:0;"><strong style="color:var(--gold);font-size:0.85rem;">'+t[0]+'</strong> <span style="color:rgba(255,255,255,0.5);font-size:0.78rem;">'+t[1]+'</span></div><div style="display:flex;gap:12px;align-items:center;flex-shrink:0;"><span style="color:rgba(255,255,255,0.35);font-size:0.72rem;">'+t[3]+'</span><span style="color:rgba(255,255,255,0.35);font-size:0.72rem;">'+t[4]+'</span><span style="background:rgba(232,0,29,0.15);color:var(--primary-red);padding:2px 8px;border-radius:4px;font-size:0.68rem;white-space:nowrap;">'+t[2]+'</span></div></div>';
+                cl.appendChild(d);
+            });}
+            r("all");
+            document.querySelectorAll("#catalogue .filter-btn").forEach(function(b){
+                b.addEventListener("click",function(){
+                    document.querySelectorAll("#catalogue .filter-btn").forEach(function(x){x.classList.remove("active");});
+                    this.classList.add("active");r(this.dataset.filter);
+                });
+            });
+        })();
+        </script>
     </section>
 
     <section id="agenda" class="light-bg scroll-reveal">
